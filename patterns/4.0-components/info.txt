@@ -1,0 +1,1 @@
+A collection of styles that can be reused across projects
