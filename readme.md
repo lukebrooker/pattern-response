@@ -10,8 +10,7 @@ To display a description about the contents of the folder, include it in a info.
 
 #### Description/Info
 To add a description use html comments.
-eg.
-<!-- INFO! This is the description /INFO -->
+eg. `<!-- INFO! This is the description /INFO -->`
 
 Use the start and ending INFO tags to declare a description
 
@@ -26,11 +25,7 @@ To add CSS there are 2 options:
 Use html comments in your pattern file.
 
 eg.
-<!--CSS!
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-}
-/CSS-->
+`<!--CSS! h1, h2, h3, h4, h5, h6 { font-weight: bold; } /CSS-->`
 
 *This CSS is now embedded in the page.*
 
