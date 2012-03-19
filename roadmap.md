@@ -1,6 +1,6 @@
-# Things to add
+# Things to do
 
-* Clean up code
+* More patterns
 * Document code better
-* Copy Code Button
-* Compile CSS files
+* Make more IE compatible
+* Clean up code more

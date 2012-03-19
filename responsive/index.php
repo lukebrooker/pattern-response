@@ -18,6 +18,11 @@
 		width: 100%;
 		padding-top: 40px;
 		background: #eee;
+		-webkit-transition: width 0.5s ease-out;
+		-moz-transition: width 0.5s ease-out;
+		-ms-transition: width 0.5s ease-out;
+		-o-transition: width 0.5s ease-out;
+		transition: width 0.5s ease-out;
 	}
 	iframe.page {
 		box-shadow: 0 1px 5px rgba(0,0,0,0.25);
@@ -26,7 +31,7 @@
 
 </head>
 <body onload="prettyPrint()" data-spy="scroll" class="pat-res pat-res-no-code">
-<nav class="pat-res-nav pat-res">
+<nav class="pat-res-nav">
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
@@ -51,11 +56,10 @@
 		</div>
 	</div>
 </div>
-</div>
+</nav>
 <iframe src="../index.php" class="page" frameborder="0" style="width: 100%; height: 100%;"></iframe>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../pattern-response/js/bootstrap-dropdown.js"></script>
 <script type="text/javascript" src="../pattern-response/js/bootstrap-scrollspy.js"></script>
 <script type="text/javascript" src="../pattern-response/js/bootstrap-collapse.js"></script>
@@ -70,21 +74,11 @@ $(function() {
 		e.preventDefault();
 		var screenWidth = $(this).attr('href');
 		if (screenWidth == 'fluid') {
-			$('body.pat-res').delay(300).removeAttr('style');
+			$('body.pat-res').removeAttr('style');
 		}
 		else {
-	  	$('body.pat-res').stop().animate({
-		    opacity: 0.3,
-		    backgroundColor: '#08c',
-		    width: screenWidth
-		  }, 300, function() {
-		    $('body.pat-res').stop().animate({
-		    	backgroundColor: '#ddd',
-		    	opacity: 1
-		  	}, 300);
-		  });
+	  	$('body.pat-res').css('width', screenWidth);
 	  }
-		
 	});
 
 });
