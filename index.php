@@ -145,7 +145,7 @@ foreach(glob($dir, GLOB_ONLYDIR) as $folder)
 
 echo '</div>';
 
-function print_html($folder, $file, $file_path, $folder_name) {
+function print_html($folder, $file, $file_path, $folder_name = null) {
 	$file_id = strtolower(remove_chars($file_path['filename']));
 	$file_contents = file_get_contents($file);
 	$css_file = $folder . '/' . $file_path['filename'] . '.css';
