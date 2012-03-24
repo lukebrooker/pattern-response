@@ -177,18 +177,23 @@ function print_html($folder, $file, $file_path, $folder_name = null) {
   echo '<pre class="prettyprint lang-html">';
   echo $html_string_code;
   echo '</pre></div>';
-  if (file_exists($css_file) || $css_string) {
+  if ($css_string) {
     echo '<div class="css code"><h5 class="pat-res-heading"><a href="'.$file.'" class="clip">CSS <span>select</span></a>';
-    if($css_string): echo '<span class="inline">embedded</span>'; endif;
-    if(file_exists($css_file)): echo '<span class="inline">compiled</span>'; endif;
+    echo '<span class="inline">embedded</span>';
+    echo '</h5>';
+    echo '<pre class="prettyprint lang-css">';
+    echo $css_string;
+    echo '</pre></div>';
+    echo '<style type="text/css">';
+    echo $css_string;
+    echo '</style>';
+  } elseif (file_exists($css_file)) {
+    echo '<div class="css code"><h5 class="pat-res-heading"><a href="'.$file.'" class="clip">CSS <span>select</span></a>';
+    echo '<span class="inline">compiled</span>';
     echo '</h5>';
     echo '<pre class="prettyprint lang-css">';
     echo htmlspecialchars(file_get_contents($css_file));
-    echo $css_string;
     echo '</pre></div>';
-    if($css_string): echo '<style type="text/css">';
-    echo $css_string;
-    echo '</style>'; endif;
   }
   echo '</div>';
   echo '</div>';
