@@ -1,5 +1,16 @@
 # Pattern Response
 
+------------------------
+
+## Update
+
+Anyone still looking at this, I haven't had much time to work on this lately and after looking around [StyleDocco](https://github.com/jacobrask/styledocco) seems to be doing nearly everything I wanted this project to do. It's possible I might put more work into this, but it's more likely that I'd give my input back to StyleDocco instead.
+
+Thanks,
+Luke
+
+------------------------
+
 ## How to use
 
 Create folders in the patterns folder, place html files in each folder. The html files can contain html, css and/or a description.
