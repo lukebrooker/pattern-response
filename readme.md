@@ -4,8 +4,7 @@
 
 ## Update | 6th September 2013
 
-Anyone still looking at this, I still currently recommend either [StyleDocco](https://github.com/jacobrask/styledocco) or [Kalei Style Guide](http://kaleistyleguide.com/) for generating style guides, but I might be working on a new project that is closer to what I would ideally li {
-ke.
+Anyone still looking at this, I still currently recommend either [StyleDocco](https://github.com/jacobrask/styledocco) or [Kalei Style Guide](http://kaleistyleguide.com/) for generating style guides, but I might be working on a new project that is closer to what I would ideally like.
 
 Thanks,
 Luke
