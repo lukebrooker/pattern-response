@@ -2,9 +2,10 @@
 
 ------------------------
 
-## Update
+## Update | 6th September 2013
 
-Anyone still looking at this, I haven't had much time to work on this lately and after looking around [StyleDocco](https://github.com/jacobrask/styledocco) seems to be doing nearly everything I wanted this project to do. It's possible I might put more work into this, but it's more likely that I'd give my input back to StyleDocco instead.
+Anyone still looking at this, I still currently recommend either [StyleDocco](https://github.com/jacobrask/styledocco) or [Kalei Style Guide](http://kaleistyleguide.com/) for generating style guides, but I might be working on a new project that is closer to what I would ideally li {
+ke.
 
 Thanks,
 Luke
